@@ -1,0 +1,40 @@
+---
+title: "Willingness to grow medicinal plants?"
+output: 
+  flexdashboard::flex_dashboard:
+    orientation: columns
+    vertical_layout: fill
+runtime: shiny
+---
+
+```{r setup, include=FALSE}
+library(flexdashboard)
+```
+
+Column {data-width=650}
+-----------------------------------------------------------------------
+
+### Input
+
+```{r}
+selectInput("a","Gender",choices = c("","Male","Female"))
+selectInput("a","Gender",choices = c("","Male","Female"))
+
+
+```
+
+Column {data-width=350}
+-----------------------------------------------------------------------
+
+### Chart B
+
+```{r}
+
+```
+
+### Chart C
+
+```{r}
+
+```
+
