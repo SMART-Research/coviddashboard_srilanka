@@ -28,7 +28,18 @@ Column {data-width=350}
 
 ### Chart B
 
-```{r}
+```{r, eval=FALSE}
+plotOutput("p1")
+output$p1 <- renderPlot({
+     if (input$c == "Trend"){
+    s_data <- df
+      }
+  if (input$c == "Trend" && input$b != "ALL") {
+      s_data <- s_data %>% 
+          filter(C %in% input$b)
+  }
+    plot(s_data$A,s_data$B)
+  })
 
 ```
 
