@@ -1,3 +1,0 @@
-# grower
-
-Webapp: Model deployment
