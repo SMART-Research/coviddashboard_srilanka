@@ -1,5 +1,6 @@
 ---
 title: "Willingness to grow medicinal plants?"
+output_dir: docs
 output: 
   flexdashboard::flex_dashboard:
     orientation: columns
@@ -8,6 +9,7 @@ output:
 
 ```{r setup, include=FALSE}
 library(flexdashboard)
+library(shiny)
 ```
 
 Column {data-width=200}
