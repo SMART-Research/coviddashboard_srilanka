@@ -101,7 +101,7 @@ server <- function(input, output) {
     new_data$Agronomic_crops_availability <- factor(new_data$Agronomic_crops_availability)
 
     
-    df <- data.frame( PREDICTED_Probability= round(predict(Model, newdata = new_data, type = "response"), 2))
+    df <- data.frame( PREDICTED_Probability= round(predict(Model, newdata = new_data, type="response"), 2))
     df
   })
   
