@@ -1,10 +1,11 @@
 ---
-title: "Willingness to aromatic grow medicinal plants?"
+title: "Willingness to aromatic plants with mosquito repellent properties?"
 output_dir: docs
 output: 
   flexdashboard::flex_dashboard:
     orientation: columns
     vertical_layout: fill
+runtime: shiny
 ---
 
 ```{r setup, include=FALSE}
@@ -35,20 +36,30 @@ Column {data-width=350}
 
 ### Outcome
 
-```{r, eval=FALSE}
-plotOutput("p1")
-output$p1 <- renderPlot({
-     if (input$c == "Trend"){
-    s_data <- df
-      }
-  if (input$c == "Trend" && input$b != "ALL") {
-      s_data <- s_data %>% 
-          filter(C %in% input$b)
-  }
-    plot(s_data$A,s_data$B)
-  })
 
+```{r}
+library(tibble)
+library(randomForest)
+Gender <- reactive(input$a)
+District <- reactive(input$b)
+Age <- reactive(input$c)
+Education <- reactive(input$d)
+Income <- reactive(input$e)
+#renderText(gender())
+renderTable(tibble(Gender = factor(c(Gender())), 
+District = factor(c(District())),
+Age = c(Age()),
+Education = factor(c(Education())),
+Income = c(Income())
+
+
+                       ))
 ```
 
 
+```{r}
+invisFun <- renderText({ invisible("Probability") })
+invisFun()
+
+```
 

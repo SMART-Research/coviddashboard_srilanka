@@ -1,0 +1,13 @@
+name: grower
+title: grower
+username:
+account: srilanka
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 6556172
+bundleId: 6046706
+url: https://srilanka.shinyapps.io/grower/
+when: 1656335467.91404
+lastSyncTime: 1656335467.91405
+asMultiple: FALSE
+asStatic: FALSE
