@@ -5,9 +5,10 @@ account: srilanka
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 6556172
-bundleId: 6046754
+bundleId: 6046841
 url: https://srilanka.shinyapps.io/grower/
-when: 1656336417.97018
-lastSyncTime: 1656336417.97019
+when: 1656338449.80369
+lastSyncTime: 1656338449.80371
 asMultiple: FALSE
 asStatic: FALSE
+ignoredFiles: _site.yml|data/rf_upsampling.RData|data/train.rda|index.Rmd|docs

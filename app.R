@@ -43,9 +43,15 @@ ui <- fluidPage(
   mainPanel(
     DTOutput("shiny_table"),
     hr(),
-    DTOutput("prediction_table")
+    DTOutput("prediction_table")),
+    
+    # WHERE YOUR FOOTER GOES
+    hr(),
+    print("~~~my disclaimer~~~~")    
+    
+    
   )
-)
+  
 
 server <- function(input, output) {
   
@@ -110,6 +116,7 @@ server <- function(input, output) {
     predict_df()
   })
   
+ 
   
 }
 
