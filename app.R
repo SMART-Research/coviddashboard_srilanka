@@ -45,10 +45,16 @@ ui <- fluidPage(
     hr(),
     DTOutput("prediction_table")),
     
-    # WHERE YOUR FOOTER GOES
+    #FOOTER
     hr(),
-    print("~~~my disclaimer~~~~")    
-    
+    print("The web app is developed based on the work done in the paper:"),
+    hr(),
+    print("K.D. Munugoda, T.S. Talagala, S.M.C.U.P. Subasinghe*, D.S. Hettiarachchi, 
+A.T. Cooray (2022), Choice Modelling for the Commercial Cultivation of Underutilized Aromatic Plants for Producing Mosquito Repellents: Targeting Rural Sector Income Generation-under review"),    
+    hr(),
+    print("Corresponding author: Professor S.M.C.U.P. Subasinghe, 
+Centre for Forestry and Environment, Department of Forestry and Environmental Science, University of Sri Jayewardenepura, Nugegoda, CO 10250, Sri Lanka, Email: upuls@sjp.ac.lk")
+  
     
   )
   
