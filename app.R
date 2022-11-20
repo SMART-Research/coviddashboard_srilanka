@@ -53,7 +53,9 @@ ui <- fluidPage(
 A.T. Cooray (2022), Choice Modelling for the Commercial Cultivation of Underutilized Aromatic Plants for Producing Mosquito Repellents: Targeting Rural Sector Income Generation-under review"),    
     hr(),
     print("Corresponding author: Professor S.M.C.U.P. Subasinghe, 
-Centre for Forestry and Environment, Department of Forestry and Environmental Science, University of Sri Jayewardenepura, Nugegoda, CO 10250, Sri Lanka, Email: upuls@sjp.ac.lk")
+Centre for Forestry and Environment, Department of Forestry and Environmental Science, University of Sri Jayewardenepura, Nugegoda, CO 10250, Sri Lanka, Email: upuls@sjp.ac.lk"),
+    hr(),
+    print("How to use the app? Visit: https://smart-research.github.io/grower/")
   
     
   )
