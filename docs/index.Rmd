@@ -1,0 +1,63 @@
+---
+title: "Help File: App to Predict Probability of Willingness to Grow Aromatic Medicinal Plants"
+author: ""
+date: "Last updated: `r format(Sys.time(), '%B %d, %Y')`"
+output: 
+  html_document:
+    toc: true # table of content true
+    toc_depth: 3  # upto three depths of headings (specified by #, ## and ###)
+    toc_float: true
+    number_sections: true  ## if you want number sections at each table header
+    theme: united  # many options for theme, this one is my favorite.
+    highlight: tango 
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Description 
+
+The web app is developed based on the work done in the paper:
+
+K.D. Munugoda, T.S. Talagala, S.M.C.U.P. Subasinghe*, D.S. Hettiarachchi, A.T. Cooray (2022), Choice Modelling for the Commercial Cultivation of Underutilized Aromatic Plants for Producing Mosquito Repellents: Targeting Rural Sector Income Generation-under review
+
+
+Study area: Sri Lanka
+
+Sample: 480 homestead in 24 villages
+
+Study period: November, 2019 - April, 2020
+
+#  Variable description
+
+| Variable name | Variable description |
+| ------------- | -------------------- |
+|Gender | Gender of the person willingness to grow medicinal plant |
+|District |  Living district of the person willingness to grow medicinal plant |
+| Age | Age of person willingness to grow medicinal plant (The sample minimum is 20 and the maximum is 89) |
+| Education | Highest education level of the person willingness to grow medicinal plant |
+| Income | Income in Sri Lankan Rupees.(The sample minimum is Rs. 0 and the maximum is Rs. 152000.00) |
+| Agronomic crop availability | No, Yes |
+| Number of agri contributing family members | The sample minimum is 0 and the maximum is 6 |
+| Number of agri-contributing employees | The sample minimum is 0 and the maximum is 5 |
+| Land size | Land size (in Acres) of the person willingness to grow medicinal plant (The sample minimum is 1 and the maximum is 4) |
+
+## Usage
+
+**Step 1: **
+
+Enter input variables 
+
+
+**Step 2: **
+
+Press the "add" button to add the step 1 inputs to the app.
+
+**Step: 3**
+
+Press the "predict" button to obtain the predictions.
+
+# Live demonstration
+
+<iframe width="576" height="360" src="https://www.youtube.com/embed/pnInsXb8YLc" title="grower" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
