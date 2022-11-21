@@ -62,6 +62,6 @@ Press the "predict" button to obtain the predictions.
 
 Link: https://www.youtube.com/embed/pnInsXb8YLc
 
-<iframe src="https://www.youtube.com/embed/pnInsXb8YLc" data-external= "1" > </iframe>
+<iframe width="1060" height="615" src="https://www.youtube.com/embed/pnInsXb8YLc" data-external= "1" > </iframe>
 
 \
