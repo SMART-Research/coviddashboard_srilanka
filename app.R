@@ -33,7 +33,7 @@ ui <- fluidPage(
     selectInput("Agronomic_crops_availability","Agronomics crops availability",choices = c("","Yes","No")),
     numericInput("Agri_contributing_family_members", "Number of agri-contributing family members", 0, min = 0, max = 100000000),
     numericInput("Agri_contributing_employees", "Number of agri-contributing employees", 0, min = 0, max = 100000000),
-    numericInput("Land_size", "Land size", 0, min = 0, max = 100000000),
+    numericInput("Land_size", "Land size (acre)", 0, min = 0, max = 100000000),
     
     actionButton("add_btn", "Add"),
     actionButton("delete_btn", "Delete"),
